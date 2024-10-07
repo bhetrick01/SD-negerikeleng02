@@ -1,0 +1,57 @@
+[
+    {
+        "no": 1,
+        "nama": "Paryem, S.Pd.",
+        "jabatan": "Kepala Sekolah"
+    },
+    {
+        "no": 2,
+        "nama": "Erna Widyawati, A.Ma.Pust",
+        "jabatan": "Pustakawan"
+    },
+    {
+        "no": 3,
+        "nama": "Rudhi Raharjo, S.Pd.SD",
+        "jabatan": "Guru Kelas I"
+    },
+    {
+        "no": 4,
+        "nama": "Inayatul Khoeriyah, S.Pd.SD",
+        "jabatan": "Guru Kelas II"
+    },
+    {
+        "no": 5,
+        "nama": "Siti Shofiyah, S.Pd.SD",
+        "jabatan": "Guru Kelas III"
+    },
+    {
+        "no": 6,
+        "nama": "Nur Asfi Nafisah, S.Pd.",
+        "jabatan": "Guru Kelas IV"
+    },
+    {
+        "no": 7,
+        "nama": "Zainul Muttaqin, S.Pd.",
+        "jabatan": "Guru Kelas V"
+    },
+    {
+        "no": 8,
+        "nama": "Dias Yuliana Putri, S.Pd.SD",
+        "jabatan": "Guru Kelas VI"
+    },
+    {
+        "no": 9,
+        "nama": "Yaeni Setiana Sari, S.Pd.I",
+        "jabatan": "Guru PAI"
+    },
+    {
+        "no": 10,
+        "nama": "Sartono",
+        "jabatan": "Penjaga Sekolah"
+    },
+    {
+        "no": 11,
+        "nama": "Uswatun Chasanah, S.Pd",
+        "jabatan": "Komite"
+    }
+]

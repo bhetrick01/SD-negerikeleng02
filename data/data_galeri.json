@@ -1,0 +1,86 @@
+[
+    {
+        "id": 0,
+        "src": "img/gmbr1.jpg",
+        "alt": "Gambar 1",
+        "title": "Judul Gambar 1",
+        "description": "Deskripsi singkat tentang Gambar 1."
+    },
+    {
+        "id": 1,
+        "src": "img/gmbr2.jpg",
+        "alt": "Gambar 2",
+        "title": "Judul Gambar 2",
+        "description": "Deskripsi singkat tentang Gambar 2."
+    },
+    {
+        "id": 2,
+        "src": "img/gmbr3.jpg",
+        "alt": "Gambar 3",
+        "title": "Judul Gambar 3",
+        "description": "Deskripsi singkat tentang Gambar 3."
+    },
+    {
+        "id": 3,
+        "src": "img/gmbr4.jpg",
+        "alt": "Gambar 4",
+        "title": "Judul Gambar 4",
+        "description": "Deskripsi singkat tentang Gambar 4."
+    },
+    {
+        "id": 4,
+        "src": "img/gmbr5.jpg",
+        "alt": "Gambar 5",
+        "title": "Judul Gambar 5",
+        "description": "Deskripsi singkat tentang Gambar 5."
+    },
+    {
+        "id": 5,
+        "src": "img/gmbr6.jpg",
+        "alt": "Gambar 6",
+        "title": "Judul Gambar 6",
+        "description": "Deskripsi singkat tentang Gambar 6."
+    },
+    {
+        "id": 6,
+        "src": "img/gmbr7.jpg",
+        "alt": "Gambar 7",
+        "title": "Judul Gambar 7",
+        "description": "Deskripsi singkat tentang Gambar 7."
+    },
+    {
+        "id": 7,
+        "src": "img/gmbr8.jpg",
+        "alt": "Gambar 8",
+        "title": "Judul Gambar 8",
+        "description": "Deskripsi singkat tentang Gambar 8."
+    },
+    {
+        "id": 8,
+        "src": "img/gmbr9.jpg",
+        "alt": "Gambar 9",
+        "title": "Judul Gambar 9",
+        "description": "Deskripsi singkat tentang Gambar 9."
+    },
+    {
+        "id": 9,
+        "src": "img/gmbr10.jpg",
+        "alt": "Gambar 7",
+        "title": "Judul Gambar 7",
+        "description": "Deskripsi singkat tentang Gambar 7."
+    },
+    {
+        "id": 10,
+        "src": "img/gmbr11.jpg",
+        "alt": "Gambar 8",
+        "title": "Judul Gambar 8",
+        "description": "Deskripsi singkat tentang Gambar 8."
+    },
+    {
+        "id": 11,
+        "src": "img/gmbr12.jpg",
+        "alt": "Gambar 9",
+        "title": "Judul Gambar 9",
+        "description": "Deskripsi singkat tentang Gambar 9."
+    }
+]

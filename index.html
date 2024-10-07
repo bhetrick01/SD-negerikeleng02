@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Negeri Keleng 02 - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        /* Gaya untuk header */
+        header {
+            background-image: url('img/gmbr15.jpg'); /* Ganti dengan jalur gambar latar belakang header */
+            background-size: cover; /* Menutupi seluruh area */
+            background-position: center; /* Memposisikan gambar di tengah */
+            height: 400px; /* Tinggi header */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks untuk keterbacaan */
+        }
+
+        header h1 {
+            font-size: 3rem; /* Ukuran font judul */
+        }
+
+        header p {
+            font-size: 1.5rem; /* Ukuran font deskripsi */
+        }
+
+        /* Latar belakang untuk seluruh halaman */
+        body {
+            background-image: url('img/background-page.jpg'); /* Ganti dengan jalur gambar latar belakang halaman */
+            background-size: cover; /* Menutupi seluruh area */
+            background-attachment: fixed; /* Memperbaiki gambar latar belakang saat scroll */
+            background-position: center; /* Memposisikan gambar di tengah */
+            color: #333; /* Warna teks default */
+        }
+
+        /* Gaya untuk galeri foto */
+        .gallery img {
+            border-radius: 10px; /* Sudut gambar yang bulat */
+        }
+
+        /* Gaya untuk kartu fasilitas */
+        .facility-box {
+            border: none; /* Menghilangkan border default */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo3.jpg" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+            <span style="font-size: 1.5rem; font-weight: bold; color: #04080c;">SD Negeri Keleng 02</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: #000000; font-weight: bold;">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profil.html" style="color: #000000; font-weight: bold;">PROFIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html" style="color: #000000; font-weight: bold;">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ekskul.html" style="color: #000000; font-weight: bold;">EKSKUL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeri.html" style="color: #000000; font-weight: bold;">GALERI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html" style="color: #000000; font-weight: bold;">KONTAK</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Header -->
+<header class="text-white text-center">
+    <h1>Selamat Datang di SD Negeri Keleng 02</h1>
+    <p class="lead">Meningkatkan kecerdasan, pengetahuan, kepribadian, akhlak mulia, serta keterampilan untuk hidup mandiri dan mengikuti pendidikan lebih lanjut.</p>
+    
+    <!-- Button "Tentang Kami" -->
+    <a href="profil.html" class="btn btn-success mt-3">Tentang Kami</a> <!-- Tombol menuju halaman profil -->
+</header>
+
+
+    <!-- Kotak Akreditasi -->
+    <section class="py-5" id="akreditasi">
+        <div class="container">
+            <h2 class="text-center mb-5">Akreditasi Sekolah</h2>
+            <div class="row text-center">
+                <div class="col-md-12 mb-4">
+                    <div class="facility-box p-4 rounded shadow-sm" style="background-color: #d5dbdb;">
+                        <h3>Akreditasi B</h3>
+                        <p class="text-muted">Kami bangga mendapatkan akreditasi B yang menunjukkan kualitas pendidikan dan pengelolaan sekolah yang baik. Akreditasi ini merupakan pengakuan atas dedikasi kami dalam menciptakan lingkungan belajar yang positif dan produktif.</p>
+                        <p class="text-muted">Melalui akreditasi ini, kami berkomitmen untuk terus meningkatkan standar pendidikan, pengembangan profesionalisme guru, dan fasilitas yang mendukung kegiatan belajar mengajar.</p>
+                        <p class="font-weight-bold">Visi Kami:</p>
+                        <p class="text-muted"><strong>“BERIMAN, BERTAKWA, UNGGUL DALAM BERPRESTASI, SERTA BERBUDAYA SANTUN.”</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Fasilitas Sekolah -->
+<section class="py-5" id="fasilitas">
+    <div class="container">
+        <h2 class="text-center mb-5">Fasilitas Unggulan Kami</h2>
+        <div class="row justify-content-center">
+            <!-- Baris pertama dengan 3 kolom -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="facility-box p-5 rounded shadow-sm text-center bg-success text-white" style="transition: transform 0.3s;">
+                    <i class="fas fa-desktop fa-3x mb-3"></i>
+                    <h3>Ruang Multimedia</h3>
+                    <p>Dilengkapi dengan teknologi modern, ruang ini dirancang untuk pembelajaran interaktif, menjadikan siswa lebih terlibat dalam proses belajar.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="facility-box p-5 rounded shadow-sm text-center bg-success  text-white" style="transition: transform 0.3s;">
+                    <i class="fas fa-tree fa-3x mb-3"></i>
+                    <h3>Halaman Luas</h3>
+                    <p>Area outdoor hijau yang ideal untuk berbagai aktivitas luar ruang, termasuk olahraga, berkumpul, dan bersosialisasi.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="facility-box p-5 rounded shadow-sm text-center bg-success text-white" style="transition: transform 0.3s;">
+                    <i class="fas fa-book fa-3x mb-3"></i>
+                    <h3>Perpustakaan Lengkap</h3>
+                    <p>Perpustakaan kami menyediakan berbagai sumber belajar, mulai dari buku teks hingga majalah edukatif, dalam suasana yang nyaman.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baris kedua dengan 2 kolom -->
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="facility-box p-5 rounded shadow-sm text-center bg-success  text-white" style="transition: transform 0.3s;">
+                    <i class="fas fa-mosque fa-3x mb-3"></i>
+                    <h3>Tempat Ibadah</h3>
+                    <p>Lingkungan spiritual yang bersih dan damai untuk mendukung kegiatan rohani siswa.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="facility-box p-5 rounded shadow-sm text-center bg-success  text-white" style="transition: transform 0.3s;">
+                    <i class="fas fa-utensils fa-3x mb-3"></i>
+                    <h3>Kantin Sehat</h3>
+                    <p>Menyediakan makanan bergizi untuk menunjang kesehatan dan kebugaran siswa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galeri Kegiatan -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4"><i class="fas fa-images"></i> Foto Kegiatan</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <a href="img/gmbr28.jpg" target="_blank">
+                        <img src="img/gmbr28.jpg" class="card-img-top" alt="Kegiatan Ekstrakurikuler 1">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <a href="img/gmbr23.jpg" target="_blank">
+                        <img src="img/gmbr23.jpg" class="card-img-top" alt="Kegiatan Ekstrakurikuler 2">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <a href="img/gmbr1.jpg" target="_blank">
+                        <img src="img/gmbr1.jpg" class="card-img-top" alt="Kegiatan Ekstrakurikuler 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="galeri.html" class="btn btn-success">Lihat Selengkapnya</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .card-img-top {
+        width: 100%;
+        height: 250px;
+        object-fit: cover; /* Memastikan gambar menutupi area dengan proporsi yang tepat tanpa terdistorsi */
+        border-radius: 10px 10px 0 0; /* Menjaga sudut gambar tetap bulat */
+    }
+
+    .card {
+        border-radius: 10px; /* Menjaga tampilan bersih dengan sudut membulat */
+        overflow: hidden; /* Menghilangkan overflow agar tampilan lebih rapi */
+        transition: transform 0.3s ease; /* Animasi saat hover */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Efek zoom saat hover */
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #28a745;
+    }
+
+    .btn-success {
+        margin-top: 20px; /* Spasi di atas tombol */
+        font-weight: bold;
+        color: white; /* Teks tombol */
+        text-decoration: none; /* Menghilangkan garis bawah */
+    }
+
+    .btn-success:hover {
+        background-color: #218838; /* Warna latar belakang saat hover */
+    }
+</style>
+
+
+ <!-- Footer -->
+ <footer class="bg-black text-center py-3">
+    <div class="container">
+        <p class="mb-1">SD Negeri Keleng 02</p>
+        <p class="mb-1">Jalan Irigasi No 377B, Keleng, Kecamatan Kesugihan</p>
+        <p class="mb-1">Telp: 0856 4326 3818 | Email: sdnkeleng02@gmail.com</p>
+        <p class="mt-2">&copy; 2024 SD Negeri Keleng 02 </p>
+        <p class="mt-2">&copy; Helen Bhetrick </p>
+    </div>
+</footer>

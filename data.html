@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Negeri Keleng 02 - Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(to right, #28a745, #20c997);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #e9ecef;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 8px;
+            color: #20c997;
+        }
+
+        .section-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 2rem;
+            color: #28a745;
+        }
+
+        .section-title i {
+            font-size: 2.5rem;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo3.jpg" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+                <span style="font-size: 1.5rem; font-weight: bold; color: #04080c;">SD Negeri Keleng 02</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: #000000; font-weight: bold;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html" style="color: #000000; font-weight: bold;">PROFIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html" style="color: #000000; font-weight: bold;">DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ekskul.html" style="color: #000000; font-weight: bold;">EKSKUL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html" style="color: #000000; font-weight: bold;">GALERI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html" style="color: #000000; font-weight: bold;">KONTAK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Data</h1>
+            <p class="lead">Data Guru & Karyawan, Data Siswa</p>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <div class="container mt-5">
+
+        <!-- Bagian Data Guru & Karyawan -->
+        <section class="mb-5">
+            <h2>Data Guru & Karyawan</h2>
+            <table class="table table-hover table-bordered mt-3">
+                <thead class="table-success">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Jabatan</th>
+                    </tr>
+                </thead>
+                <tbody id="guruTableBody">
+                    <!-- Data Dinamis Akan Disuntikkan di Sini -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bagian Data Siswa -->
+        <section class="mb-5">
+            <h2>Data Siswa</h2>
+            <table class="table table-hover table-bordered mt-3">
+                <thead class="table-success">
+                    <tr>
+                        <th>No</th>
+                        <th>Kelas</th>
+                        <th>Jumlah Siswa</th>
+                    </tr>
+                </thead>
+                <tbody id="siswaTableBody">
+                    <!-- Data Dinamis Akan Disuntikkan di Sini -->
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Kustom untuk Mengambil dan Mengisi Data -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fungsi untuk mengambil dan mengisi data Guru & Karyawan
+            fetch('data/data_guru_karyawan.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Respons jaringan tidak baik ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const guruTableBody = document.getElementById('guruTableBody');
+                    data.forEach(item => {
+                        const row = document.createElement('tr');
+
+                        const noCell = document.createElement('td');
+                        noCell.textContent = item.no;
+                        row.appendChild(noCell);
+
+                        const namaCell = document.createElement('td');
+                        namaCell.textContent = item.nama;
+                        row.appendChild(namaCell);
+
+                        const jabatanCell = document.createElement('td');
+                        jabatanCell.textContent = item.jabatan;
+                        row.appendChild(jabatanCell);
+
+                        guruTableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('Terjadi masalah dengan operasi fetch untuk Guru & Karyawan:', error);
+                });
+
+            // Fungsi untuk mengambil dan mengisi data Siswa
+            fetch('data/data_siswa.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Respons jaringan tidak baik ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const siswaTableBody = document.getElementById('siswaTableBody');
+                    data.forEach(item => {
+                        const row = document.createElement('tr');
+
+                        const noCell = document.createElement('td');
+                        noCell.textContent = item.no;
+                        row.appendChild(noCell);
+
+                        const kelasCell = document.createElement('td');
+                        kelasCell.textContent = item.kelas;
+                        row.appendChild(kelasCell);
+
+                        const jumlahSiswaCell = document.createElement('td');
+                        jumlahSiswaCell.textContent = item.jumlah_siswa;
+                        row.appendChild(jumlahSiswaCell);
+
+                        siswaTableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('Terjadi masalah dengan operasi fetch untuk Siswa:', error);
+                });
+        });
+    </script>
+</body>
+</html>
+ <!-- Footer -->
+ <footer class="bg-black text-center py-3">
+    <div class="container">
+        <p class="mb-1">SD Negeri Keleng 02</p>
+        <p class="mb-1">Jalan Irigasi No 377B, Keleng, Kecamatan Kesugihan</p>
+        <p class="mb-1">Telp: 0856 4326 3818 | Email: sdnkeleng02@gmail.com</p>
+        <p class="mt-2">&copy; 2024 SD Negeri Keleng 02 </p>
+        <p class="mt-2">&copy; Helen Bhetrick </p>
+    </div>
+</footer>

@@ -1,0 +1,32 @@
+[
+    {
+        "no": 1,
+        "kelas": "Kelas 1",
+        "jumlah_siswa": "20 siswa"
+    },
+    {
+        "no": 2,
+        "kelas": "Kelas 2",
+        "jumlah_siswa": "15 siswa"
+    },
+    {
+        "no": 3,
+        "kelas": "Kelas 3",
+        "jumlah_siswa": "27 siswa"
+    },
+    {
+        "no": 4,
+        "kelas": "Kelas 4",
+        "jumlah_siswa": "23 siswa"
+    },
+    {
+        "no": 5,
+        "kelas": "Kelas 5",
+        "jumlah_siswa": "26 siswa"
+    },
+    {
+        "no": 6,
+        "kelas": "Kelas 6",
+        "jumlah_siswa": "30 siswa"
+    }
+]

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Negeri Keleng 02 - Profil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(to right, #28a745, #20c997);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 8px;
+            color: #20c997;
+        }
+
+        .section-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 2rem;
+            color: #28a745;
+        }
+
+        .section-title i {
+            font-size: 2.5rem;
+            color: #28a745;
+        }
+
+        .gallery img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            font-size: 1.2rem;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Custom styling for the school info section */
+        .school-info {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .school-info h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .school-info p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .school-info strong {
+            color: #20c997;
+        }
+
+        /* Styling untuk tabel struktur organisasi */
+        .struktur-organisasi-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .struktur-organisasi-table th,
+        .struktur-organisasi-table td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .struktur-organisasi-table th {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .struktur-organisasi-table tbody tr:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo3.jpg" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+                <span style="font-size: 1.5rem; font-weight: bold; color: #04080c;">SD Negeri Keleng 02</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: #000000; font-weight: bold;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html" style="color: #000000; font-weight: bold;">PROFIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html" style="color: #000000; font-weight: bold;">DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ekskul.html" style="color: #000000; font-weight: bold;">EKSKUL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html" style="color: #000000; font-weight: bold;">GALERI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html" style="color: #000000; font-weight: bold;">KONTAK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Profil</h1>
+            <p class="lead">Sekolah yang membentuk generasi berprestasi</p>
+        </div>
+    </header>
+
+    <!-- Informasi Sekolah -->
+    <div class="container mb-5">
+        <div class="school-info p-4" style="background-color: #f1f1f1; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Nama Sekolah</strong></div>
+                <div class="value">: SD Negeri Keleng 02</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Jenis Sekolah</strong></div>
+                <div class="value">: Negeri</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Akreditasi</strong></div>
+                <div class="value">: B</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Jam Aktif</strong></div>
+                <div class="value">: 7</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Jumlah Guru dan Staff</strong></div>
+                <div class="value">: 7</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Jumlah Siswa</strong></div>
+                <div class="value">: 141</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Kepala Sekolah</strong></div>
+                <div class="value">: Paryem, S.Pd.</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>NIP Kepala Sekolah</strong></div>
+                <div class="value">: 19700928 200312 2 003</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Status Kepegawaian</strong></div>
+                <div class="value">: PNS</div>
+            </div>
+
+            <div class="info-item d-flex mb-2">
+                <div class="label" style="width: 200px;"><strong>Pendidikan Terakhir</strong></div>
+                <div class="value">: S1</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visi dan Misi -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h5 mb-0">Visi</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">Visi adalah situasi dan kondisi harapan masa depan yang ingin dicapai. Adapun visi SD Negeri Keleng 02 adalah sebagai berikut:</p>
+                        <p class="text-center"><strong>“BERIMAN, BERTAKWA, UNGGUL DALAM BERPRESTASI, SERTA BERBUDAYA SANTUN.”</strong></p>
+                        <ul>
+                            <li><strong>Religius</strong>: Terwujudnya peserta didik yang memiliki penghayatan dan pengamalan terhadap ajaran agama.</li>
+                            <li><strong>Berprestasi</strong>: Peserta didik unggul di bidang akademik maupun non-akademik, masuk 10 besar tingkat kecamatan.</li>
+                            <li><strong>Kreatif</strong>: Peserta didik mampu memaknai keadaan yang dinamis dan menemukan solusi yang tepat.</li>
+                            <li><strong>Berkarakter</strong>: Peserta didik yang menghormati sesama, bergotong royong, dan memiliki kebhinekaan global.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h5 mb-0">Misi</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Menyelenggarakan pembelajaran yang efektif dengan mengedepankan keimanan dan ketakwaan.</li>
+                            <li>Meningkatkan ilmu pengetahuan kepada seluruh warga sekolah secara intensif.</li>
+                            <li>Meningkatkan penghayatan ajaran agama yang dianut peserta didik agar menghasilkan lulusan berkualitas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Struktur Organisasi dalam Bentuk Tabel -->
+    <div class="container my-5">
+        <h2 class="section-title text-center">Struktur Organisasi</h2>
+        <table class="struktur-organisasi-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Jabatan</th>
+                    <th>Nama</th>
+                </tr>
+            </thead>
+            <tbody id="strukturOrganisasiTableBody">
+                <!-- Data Struktur Organisasi akan dimuat secara dinamis di sini -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Kustom untuk Mengambil dan Menampilkan Struktur Organisasi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fungsi untuk mengambil dan mengisi data Struktur Organisasi
+            fetch('data/data_struktur_organisasi.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Respons jaringan tidak baik ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const tableBody = document.getElementById('strukturOrganisasiTableBody');
+                    data.forEach(item => {
+                        const row = document.createElement('tr');
+
+                        const noCell = document.createElement('td');
+                        noCell.textContent = item.no;
+                        row.appendChild(noCell);
+
+                        const jabatanCell = document.createElement('td');
+                        jabatanCell.textContent = item.jabatan;
+                        row.appendChild(jabatanCell);
+
+                        const namaCell = document.createElement('td');
+                        namaCell.textContent = item.nama;
+                        row.appendChild(namaCell);
+
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('Terjadi masalah dengan operasi fetch untuk Struktur Organisasi:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
+ <!-- Footer -->
+ <footer class="bg-black text-center py-3">
+    <div class="container">
+        <p class="mb-1">SD Negeri Keleng 02</p>
+        <p class="mb-1">Jalan Irigasi No 377B, Keleng, Kecamatan Kesugihan</p>
+        <p class="mb-1">Telp: 0856 4326 3818 | Email: sdnkeleng02@gmail.com</p>
+        <p class="mt-2">&copy; 2024 SD Negeri Keleng 02 </p>
+        <p class="mt-2">&copy; Helen Bhetrick </p>
+    </div>
+</footer>
