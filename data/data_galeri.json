@@ -82,5 +82,26 @@
         "alt": "Gambar 9",
         "title": "Judul Gambar 9",
         "description": "Deskripsi singkat tentang Gambar 9."
+    },
+    {
+        "id": 12,
+        "src": "img/gmbr13.jpg",
+        "alt": "Gambar 7",
+        "title": "Judul Gambar 7",
+        "description": "Deskripsi singkat tentang Gambar 7."
+    },
+    {
+        "id": 13,
+        "src": "img/gmbr14.jpg",
+        "alt": "Gambar 8",
+        "title": "Judul Gambar 8",
+        "description": "Deskripsi singkat tentang Gambar 8."
+    },
+    {
+        "id": 14,
+        "src": "img/gmbr15.jpg",
+        "alt": "Gambar 9",
+        "title": "Judul Gambar 9",
+        "description": "Deskripsi singkat tentang Gambar 9."
     }
 ]
