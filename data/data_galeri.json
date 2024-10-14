@@ -101,5 +101,12 @@
         "alt": "Gambar 9",
         "title": "Judul Gambar 9",
         "description": "Deskripsi singkat tentang Gambar 9."
+    },
+    {
+        "id": 15,
+        "src": "img/gmbr16.jpg",
+        "alt": "Gambar 9",
+        "title": "Judul Gambar 9",
+        "description": "Deskripsi singkat tentang Gambar 9."
     }
 ]
