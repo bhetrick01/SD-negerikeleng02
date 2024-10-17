@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Simple hardcoded username and password for demo purposes
     $valid_username = 'admin';
-    $valid_password = 'password123';
+    $valid_password = 'admin123';
 
     if ($username == $valid_username && $password == $valid_password) {
         $_SESSION['loggedin'] = true;
